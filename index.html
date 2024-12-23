@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveConnect - Find Your Match</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: white;
+            margin: 2rem 0;
+        }
+
+        .hero h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .button {
+            background: #ff6b6b;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .profiles {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .profile-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            padding: 1.5rem;
+        }
+
+        .profile-info h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .match-button {
+            background: #ff6b6b;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .profiles {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💕 LoveConnect</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#matches">Matches</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Find Your Perfect Match Today</h1>
+        <p>Join thousands of singles looking for love</p>
+        <a href="#signup" class="button">Create Free Account</a>
+    </div>
+
+    <div class="profiles">
+        <div class="profile-card">
+            <img src="/api/placeholder/300/200" alt="Profile 1">
+            <div class="profile-info">
+                <h3>Sarah, 28</h3>
+                <p>Love hiking, photography, and trying new restaurants. Looking for someone adventurous!</p>
+                <a href="#" class="match-button">Like Profile</a>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="/api/placeholder/300/200" alt="Profile 2">
+            <div class="profile-info">
+                <h3>Mike, 32</h3>
+                <p>Software developer who enjoys gaming and cooking. Seeking someone to share laughs with.</p>
+                <a href="#" class="match-button">Like Profile</a>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="/api/placeholder/300/200" alt="Profile 3">
+            <div class="profile-info">
+                <h3>Emma, 26</h3>
+                <p>Artist and yoga enthusiast. Looking for someone creative and positive.</p>
+                <a href="#" class="match-button">Like Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LoveConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
